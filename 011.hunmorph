@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Input (stdin): Hungarian word surface forms, 1 per line, UTF-8 encoding
+# Output (stdout): input, number of analyses, analyses, separated by spaces, UTF-8 encoding
+
+HUNTDIR=/home/mihaltz/hun-tools
+
+iconv -f UTF-8 -t ISO-8859-2 | ocamorph --bin $HUNTDIR/hunmorph/morphdb.hu/morphdb_hu.bin --tag_preamble "" --tag_sep " " --count_analyses | iconv -f ISO-8859-2 -t UTF-8
