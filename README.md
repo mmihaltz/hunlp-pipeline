@@ -22,6 +22,11 @@ https://bitbucket.org/mmihaltz/hun-tools-bin
 
 4. In `010.huntoken`, `011.hunmorph`, `011.hunpos-hunmorph` set the HUNTDIR variable to the directory that contains the tools in 3.
 
-## Usage
+## Testing
 
-See `Makefile`.
+Run:
+```
+./test.sh
+```
+
+If everything works right you will get an output file `test.txt.ana`, which should be more or less the same as to the included `test.txt.ana.expected`.
