@@ -18,7 +18,8 @@ Created by Marton Mihaltz
 - hunmorph
 
 *Note*: You can get the all of the above with trained models in one package from:  
-https://bitbucket.org/mmihaltz/hun-tools-bin
+  https://bitbucket.org/mmihaltz/hun-tools-bin  
+Please follow installation instructions in the README.
 
 4. In `010.huntoken`, `011.hunmorph`, `011.hunpos-hunmorph` set the HUNTDIR variable to the directory that contains the tools in 3.
 
